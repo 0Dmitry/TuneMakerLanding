@@ -15,12 +15,12 @@ body {
 }
 
 a {
-  color: #fec417;
+  color: #ffd147;
   transition: all .35s;
 }
 
 a:hover, a:focus {
-  color: #e1a901;
+  color: #ffc414;
 }
 
 hr {
@@ -76,7 +76,7 @@ section h2 {
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #e1a901;
+  color: #ffc414;
 }
 
 #mainNav .navbar-toggler {
@@ -93,7 +93,7 @@ section h2 {
 }
 
 #mainNav .navbar-nav > li > a.active {
-  color: #fec417 !important;
+  color: #ffd147 !important;
   background-color: transparent;
 }
 
@@ -108,7 +108,7 @@ section h2 {
 
 #mainNav .navbar-nav > li > a:hover,
 #mainNav .navbar-nav > li > a:focus:hover {
-  color: #fec417;
+  color: #ffd147;
 }
 
 @media (min-width: 992px) {
@@ -117,7 +117,7 @@ section h2 {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: #fec417;
+    color: #ffe494;
   }
   #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
     color: white;
@@ -138,7 +138,7 @@ section h2 {
     color: #222222;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-    color: #fec417;
+    color: #ffd147;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
@@ -146,7 +146,7 @@ section h2 {
   }
   #mainNav.navbar-shrink .navbar-nav > li > a:hover,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus:hover {
-    color: #fec417;
+    color: #ffd147;
   }
 }
 
@@ -168,6 +168,10 @@ header.masthead .header-content {
 
 header.masthead .header-content h1 {
   font-size: 30px;
+}
+
+header.masthead .header-content h2, header.masthead .header-content h3 {
+  color: #ffe494;
 }
 
 header.masthead .device-container {
@@ -395,12 +399,12 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .bg-primary {
-  background: #fec417;
-  background: linear-gradient(#fec417, #fabc01);
+  background: #ffd147;
+  background: linear-gradient(#ffd147, #ffcb2e);
 }
 
 .text-primary {
-  color: #fec417;
+  color: #ffd147;
 }
 
 .no-gutter > [class*='col-'] {
@@ -416,8 +420,8 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
   color: white;
-  border-color: #fec417;
-  background-color: #fec417;
+  border-color: #ffd147;
+  background-color: #ffd147;
 }
 
 .btn {

@@ -18,6 +18,9 @@ header.masthead {
         h1 {
             font-size: 30px;
         }
+        h2,h3 {
+            color: lighten($theme-primary, 15);
+        }
     }
     .device-container {
         max-width: 325px;
