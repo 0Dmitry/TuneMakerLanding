@@ -170,8 +170,23 @@ header.masthead .header-content h1 {
   font-size: 30px;
 }
 
-header.masthead .header-content h2, header.masthead .header-content h3 {
+header.masthead .header-content h3, header.masthead .header-content h4, header.masthead .header-content h5 {
   color: #ffe494;
+}
+
+header.masthead .badge-link {
+  display: block;
+}
+
+header.masthead .badge-link img {
+  height: 60px;
+}
+
+@media (min-width: 768px) {
+  header.masthead .badge-link {
+    display: inline-block;
+    margin-bottom: 0;
+  }
 }
 
 header.masthead .device-container {
@@ -237,6 +252,10 @@ section.download .badges .badge-link img {
   section.download h2 {
     font-size: 70px;
   }
+}
+
+section.features .row {
+  margin-bottom: 50px;
 }
 
 section.features .section-heading {

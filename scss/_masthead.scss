@@ -18,8 +18,18 @@ header.masthead {
         h1 {
             font-size: 30px;
         }
-        h2,h3 {
+        h3,h4,h5 {
             color: lighten($theme-primary, 15);
+        }
+    }
+    .badge-link {
+        display: block;
+        img {
+            height: 60px;
+        }
+        @media(min-width: 768px) {
+            display: inline-block;
+            margin-bottom: 0;
         }
     }
     .device-container {
