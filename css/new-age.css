@@ -154,7 +154,7 @@ header.masthead {
   position: relative;
   width: 100%;
   padding-top: 150px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
   color: white;
   background: url("../img/bg-pattern.png"), #fe8e17;
   background: url("../img/bg-pattern.png"), linear-gradient(to left, #fe8e17, #dc2424);
@@ -162,7 +162,6 @@ header.masthead {
 
 header.masthead .header-content {
   max-width: 500px;
-  margin-bottom: 100px;
   text-align: center;
 }
 
@@ -174,6 +173,18 @@ header.masthead .header-content h1 {
 header.masthead .header-content h3, header.masthead .header-content h4, header.masthead .header-content h5 {
   color: #ffe494;
   text-align: left;
+}
+
+header.masthead .header-content .badge-link {
+  display: none;
+}
+
+header.masthead .mobile-download {
+  margin-top: 50px;
+}
+
+header.masthead .mobile-download .badge-link {
+  margin: 0 auto;
 }
 
 header.masthead .badge-link {
@@ -215,8 +226,14 @@ header.masthead .device-container .screen img {
   header.masthead .header-content h1 {
     font-size: 50px;
   }
+  header.masthead .header-content .badge-link {
+    display: block;
+  }
   header.masthead .device-container {
     max-width: 325px;
+  }
+  header.masthead .mobile-download .badge-link {
+    display: none;
   }
 }
 
