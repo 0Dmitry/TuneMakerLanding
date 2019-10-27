@@ -156,8 +156,8 @@ header.masthead {
   padding-top: 150px;
   padding-bottom: 100px;
   color: white;
-  background: url("../img/bg-pattern.png"), #fec417;
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, #fec417, #dc2424);
+  background: url("../img/bg-pattern.png"), #fe8e17;
+  background: url("../img/bg-pattern.png"), linear-gradient(to left, #fe8e17, #dc2424);
 }
 
 header.masthead .header-content {
@@ -302,7 +302,7 @@ section.features .feature-item i {
   font-size: 80px;
   display: block;
   margin-bottom: 15px;
-  background: linear-gradient(to left, #fec417, #dc2424);
+  background: linear-gradient(to left, #fe8e17, #dc2424);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
