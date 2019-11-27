@@ -1,0 +1,12 @@
+// Styling for the download section
+section.manual {
+    text-align: center;
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        i {
+            color: $brand-google-plus;
+        }
+    }
+}

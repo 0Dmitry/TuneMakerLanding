@@ -43,7 +43,7 @@
         border-color: transparent;
         background-color: transparent;
         .navbar-brand {
-            color: lighten($theme-primary, 15);
+            color: hsl(45, 100%, 80%);
             &:hover,
             &:focus {
                 color: white;

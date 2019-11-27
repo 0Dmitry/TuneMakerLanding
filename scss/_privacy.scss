@@ -1,0 +1,15 @@
+// Styling for the download section
+section.privacy {
+    background-color: $gray-dark;
+    text-align: center;
+    p {
+        color: rgb(223, 223, 223);
+    }
+    h2 {
+        color: rgb(171, 123, 255);
+        margin-top: 0;
+        i {
+            color: $brand-google-plus;
+        }
+    }
+}
