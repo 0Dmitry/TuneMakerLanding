@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Mixer · Tune Maker User Manual</title><meta name="viewport" content="width=device-width"/><meta name="generator" content="Docusaurus"/><meta name="description" content="## Overview"/><meta name="docsearch:language" content="en"/><meta property="og:title" content="Mixer · Tune Maker User Manual"/><meta property="og:type" content="website"/><meta property="og:url" content="https://dimklo.github.io/TuneMakerLanding/manual/"/><meta property="og:description" content="## Overview"/><meta property="og:image" content="https://dimklo.github.io/TuneMakerLanding/manual/img/undraw_online.svg"/><meta name="twitter:card" content="summary"/><meta name="twitter:image" content="https://dimklo.github.io/TuneMakerLanding/manual/img/undraw_tweetstorm.svg"/><link rel="shortcut icon" href="/TuneMakerLanding/manual/img/favicon.ico"/><link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css"/><script type="text/javascript" src="https://buttons.github.io/buttons.js"></script><script src="/TuneMakerLanding/manual/js/scrollSpy.js"></script><link rel="stylesheet" href="/TuneMakerLanding/manual/css/main.css"/><script src="/TuneMakerLanding/manual/js/codetabs.js"></script></head><body class="sideNavVisible separateOnPageNav"><div class="fixedHeaderContainer"><div class="headerWrapper wrapper"><header><a href="/TuneMakerLanding/manual/"><img class="logo" src="/TuneMakerLanding/manual/img/AppIconRounded.png" alt="Tune Maker User Manual"/><h2 class="headerTitleWithLogo">Tune Maker User Manual</h2></a><div class="navigationWrapper navigationSlider"><nav class="slidingNav"><ul class="nav-site nav-site-internal"></ul></nav></div></header></div></div><div class="navPusher singleRowMobileNav"><div class="docMainWrapper wrapper"><div class="docsNavContainer" id="docsNav"><nav class="toc"><div class="toggleNav"><section class="navWrapper wrapper"><div class="navBreadcrumb wrapper"><div class="navToggle" id="navToggler"><div class="hamburger-menu"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div></div><h2><i>›</i><span>Usage</span></h2><div class="tocToggler" id="tocToggler"><i class="icon-toc"></i></div></div><div class="navGroups"><div class="navGroup"><h3 class="navGroupCategoryTitle">Introduction</h3><ul class=""><li class="navListItem"><a class="navItem" href="/TuneMakerLanding/manual/docs/about">What is Tune Maker?</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Usage</h3><ul class=""><li class="navListItem"><a class="navItem" href="/TuneMakerLanding/manual/docs/documentBrowser">Document Browser</a></li><li class="navListItem"><a class="navItem" href="/TuneMakerLanding/manual/docs/tuneView">Tune View</a></li><li class="navListItem"><a class="navItem" href="/TuneMakerLanding/manual/docs/sectionView">Section View</a></li><li class="navListItem navListItemActive"><a class="navItem" href="/TuneMakerLanding/manual/docs/mixer">Mixer</a></li><li class="navListItem"><a class="navItem" href="/TuneMakerLanding/manual/docs/settings">Settings</a></li></ul></div><div class="navGroup"><h3 class="navGroupCategoryTitle">Help</h3><ul class=""><li class="navListItem"><a class="navItem" href="/TuneMakerLanding/manual/docs/faq">FAQ</a></li></ul></div></div></section></div><script>
+            var coll = document.getElementsByClassName('collapsible');
+            var checkActiveCategory = true;
+            for (var i = 0; i < coll.length; i++) {
+              var links = coll[i].nextElementSibling.getElementsByTagName('*');
+              if (checkActiveCategory){
+                for (var j = 0; j < links.length; j++) {
+                  if (links[j].classList.contains('navListItemActive')){
+                    coll[i].nextElementSibling.classList.toggle('hide');
+                    coll[i].childNodes[1].classList.toggle('rotate');
+                    checkActiveCategory = false;
+                    break;
+                  }
+                }
+              }
+
+              coll[i].addEventListener('click', function() {
+                var arrow = this.childNodes[1];
+                arrow.classList.toggle('rotate');
+                var content = this.nextElementSibling;
+                content.classList.toggle('hide');
+              });
+            }
+
+            document.addEventListener('DOMContentLoaded', function() {
+              createToggler('#navToggler', '#docsNav', 'docsSliderActive');
+              createToggler('#tocToggler', 'body', 'tocActive');
+
+              var headings = document.querySelector('.toc-headings');
+              headings && headings.addEventListener('click', function(event) {
+                var el = event.target;
+                while(el !== headings){
+                  if (el.tagName === 'A') {
+                    document.body.classList.remove('tocActive');
+                    break;
+                  } else{
+                    el = el.parentNode;
+                  }
+                }
+              }, false);
+
+              function createToggler(togglerSelector, targetSelector, className) {
+                var toggler = document.querySelector(togglerSelector);
+                var target = document.querySelector(targetSelector);
+
+                if (!toggler) {
+                  return;
+                }
+
+                toggler.onclick = function(event) {
+                  event.preventDefault();
+
+                  target.classList.toggle(className);
+                };
+              }
+            });
+        </script></nav></div><div class="container mainContainer docsContainer"><div class="wrapper"><div class="post"><header class="postHeader"><h1 id="__docusaurus" class="postHeaderTitle">Mixer</h1></header><article><div><span><h2><a class="anchor" aria-hidden="true" id="overview"></a><a href="#overview" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Overview</h2>
+<p>In Mixer view you adjust the volume and the pan parameter of each track, mute and solo each track, set the instrument for track and adjust track settings.</p>
+<p><img src="/TuneMakerLanding/manual/docs/assets/Mixer.png" alt="Mixer"></p>
+<h2><a class="anchor" aria-hidden="true" id="track-instrument-view"></a><a href="#track-instrument-view" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Track Instrument View</h2>
+<p><img src="/TuneMakerLanding/manual/docs/assets/TrackInstrument.png" alt="TrackInstrument"></p>
+<p>There are three types of instruments available:</p>
+<ul>
+<li><strong>Internal synth</strong> instruments.</li>
+<li><strong>MIDI</strong> instruments. Allow you to send MIDI notes to CoreMIDI compatible apps.</li>
+<li><strong>Audio Unit Extension</strong> instruments. Allow you to plug in AUv3 instruments.</li>
+</ul>
+<h2><a class="anchor" aria-hidden="true" id="track-settings"></a><a href="#track-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Track Settings</h2>
+<p>Depending on the selected instrument type and track type there could be different set of settings inside the track settings view.</p>
+<h2><a class="anchor" aria-hidden="true" id="internal-synth-track-settings"></a><a href="#internal-synth-track-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Internal synth track settings</h2>
+<p>Melody and arpeggio tracks assigned to internal synth instruments have one param, octave transposition. It allows you to lower or rise the notes played by the corresponding track.</p>
+<p><img src="/TuneMakerLanding/manual/docs/assets/InternalSynthTrackSettings.png" alt="InternalSynthTrackSettings"></p>
+<h2><a class="anchor" aria-hidden="true" id="midi-instrument-track-settings"></a><a href="#midi-instrument-track-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>MIDI instrument track settings</h2>
+<p>Track assigned to a MIDI instrument in addition to the transposition settings have the MIDI channel setting.</p>
+<h2><a class="anchor" aria-hidden="true" id="audio-unit-extension-settings"></a><a href="#audio-unit-extension-settings" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Audio Unit Extension Settings</h2>
+<p>Track assigned to an Audio Unit Extension instrument have two additional setting items: <strong>Audio Unit Interface</strong> and <strong>Audio Unit Presets</strong></p>
+<p><img src="/TuneMakerLanding/manual/docs/assets/AUTrackSettings.png" alt="AUTrackSettings"></p>
+<h3><a class="anchor" aria-hidden="true" id="audio-unit-interface"></a><a href="#audio-unit-interface" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Audio Unit interface</h3>
+<p><img src="/TuneMakerLanding/manual/docs/assets/AUInterface.png" alt="AUInterface"></p>
+<h3><a class="anchor" aria-hidden="true" id="audio-unit-presets"></a><a href="#audio-unit-presets" aria-hidden="true" class="hash-link"><svg class="hash-link-icon" aria-hidden="true" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Audio Unit presets</h3>
+<p><img src="/TuneMakerLanding/manual/docs/assets/AUPresets.png" alt="AUPresets"></p>
+</span></div></article></div><div class="docs-prevnext"><a class="docs-prev button" href="/TuneMakerLanding/manual/docs/sectionView"><span class="arrow-prev">← </span><span>Section View</span></a><a class="docs-next button" href="/TuneMakerLanding/manual/docs/settings"><span>Settings</span><span class="arrow-next"> →</span></a></div></div></div><nav class="onPageNav"><ul class="toc-headings"><li><a href="#overview">Overview</a></li><li><a href="#track-instrument-view">Track Instrument View</a></li><li><a href="#track-settings">Track Settings</a></li><li><a href="#internal-synth-track-settings">Internal synth track settings</a></li><li><a href="#midi-instrument-track-settings">MIDI instrument track settings</a></li><li><a href="#audio-unit-extension-settings">Audio Unit Extension Settings</a><ul class="toc-headings"><li><a href="#audio-unit-interface">Audio Unit interface</a></li><li><a href="#audio-unit-presets">Audio Unit presets</a></li></ul></li></ul></nav></div><footer class="nav-footer" id="footer"><section class="copyright">Copyright © 2019 Dmitry Klochkov</section></footer></div></body></html>
