@@ -12,6 +12,11 @@
             color: darken($theme-primary, 10%);
         }
     }
+    .navbar-coming-soon {
+        color: black;
+        @include heading-font;
+        font-size: 1.25rem;
+    }
     .navbar-toggler {
         font-size: 12px;
         padding: 8px 10px;
@@ -49,6 +54,9 @@
                 color: white;
             }
         }
+        .navbar-coming-soon {
+            color: white;
+        }
         .navbar-nav > li > a,
         .navbar-nav > li > a:focus {
             color: fade-out(white, .3);
@@ -65,6 +73,9 @@
                 &:focus {
                     color: $theme-primary;
                 }
+            }
+            .navbar-coming-soon {
+                color: $gray-darker;
             }
             .navbar-nav > li > a,
             .navbar-nav > li > a:focus {
